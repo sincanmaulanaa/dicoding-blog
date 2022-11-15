@@ -300,3 +300,30 @@ footer a {
   text-decoration: none;
   color: #fff;
 }
+
+@media screen and (min-width: 650px) {
+  .posts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 16px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .headline {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .headline__figure {
+    float: none;
+  }
+
+  .headline__content {
+    float: none;
+  }
+
+  .posts {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
